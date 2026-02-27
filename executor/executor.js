@@ -2,7 +2,7 @@ class Executor {
     constructor(toolRegistry, opts = {}) {
         this.registry = toolRegistry;
         this.maxRetries = opts.maxRetries || 2;
-        this.timeoutMs = opts.timeoutMs || 15000;
+        this.timeoutMs = opts.timeoutMs || 60000;
     }
 
     async executePlan(userId, steps, context = {}) {
