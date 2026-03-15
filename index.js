@@ -21,7 +21,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Healthy!');
+  res.send('Server Healthy!');
 });
 
 app.use("/api", apiRoutes);
